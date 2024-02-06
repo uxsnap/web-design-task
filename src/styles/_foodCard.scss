@@ -1,0 +1,58 @@
+.foodCard {
+  border-radius: 12px;
+  background-color: #fff;
+  max-width: 532px;
+
+  .top img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .bottom {
+    padding: 0 ($gridSize * 6) ($gridSize * 7) ($gridSize * 4);
+
+    .foodCardMain {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .info {
+        display: flex;
+        align-items: center;
+
+        .name {
+          font-size: 24px;
+          margin-right: 24px;
+        }
+
+        .weight {
+          font-size: 12px;
+          opacity: 0.5;
+        }
+      }
+
+      .priceBlock {
+        .price {
+          font-weight: 600;
+
+          span {
+            &:first-child {
+              font-size: 36px;
+            }
+
+            &:last-child {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+
+    .footer {
+      margin-top: $gridSize * 2;
+      font-size: 14px;
+      opacity: 0.5;
+    }
+  }
+}

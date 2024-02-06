@@ -9,3 +9,8 @@
 // components
 @import "header";
 @import "productList";
+@import "foodCard";
+
+.main {
+  background-color: $mainBg;
+}

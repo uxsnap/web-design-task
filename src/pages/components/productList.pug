@@ -1,4 +1,5 @@
 .productList 
-  header 
-    include productListHeader.pug
-  main
+  include productListHeader.pug
+  .body
+    each val in [1, 2, 3, 4, 5]
+      include foodCard.pug
