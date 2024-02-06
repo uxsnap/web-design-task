@@ -1,12 +1,12 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const PugPlugin = require('pug-plugin')
-
+const path = require('path')
 const paths = require('./paths')
 
 module.exports = {
   entry: {
-    index: './src/index.pug', // output dist/index.html
+    index: './src/pages/index.pug', // output dist/index.html
   },
 
   output: {
@@ -44,5 +44,12 @@ module.exports = {
       { test: /\.(?:ico|gif|png|jpg|jpeg)$/i, type: 'asset/resource' },
       { test: /\.(woff(2)?|eot|ttf|otf|svg|)$/, type: 'asset/inline' },
     ],
+  },
+
+  resolve: {
+    alias: {
+      images: path.join(__dirname, '../src/images/'),
+      styles: path.join(__dirname, '../src/styles/'),
+    },
   },
 }

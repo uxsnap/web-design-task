@@ -5,4 +5,7 @@
 
 @import 'reset';
 @import 'variables';
-@import 'scaffolding';
+
+// components
+@import "header";
+@import "productList";

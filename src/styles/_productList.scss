@@ -1,0 +1,47 @@
+.productList {
+  display: flex;
+  flex-direction: column;
+  padding: 0 ($gridSize * 6);
+
+  .productListHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    .title {
+      display: flex;
+      align-items: flex-end;
+
+      .category {
+        font-size: ($gridSize * 12);
+        line-height: ($gridSize * 12);
+        margin-right: $gridSize * 3;
+        font-weight: 600;
+      }
+
+      .quantity {
+        opacity: 0.5;
+        font-size: ($gridSize * 6);
+        line-height: ($gridSize * 8);
+      }
+    }
+
+    .sortButtons {
+      display: flex;
+      align-items: center;
+      gap: $gridSize * 3;
+
+      .sortButton {
+        padding: ($gridSize * 3);
+        background-color: $mainColor;
+        border-radius: ($gridSize * 3);
+        cursor: pointer;
+        
+        &.disabled {
+          opacity: .4;
+        }
+      }
+    }
+  }
+}
