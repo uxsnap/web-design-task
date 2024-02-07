@@ -1,0 +1,9 @@
+.sideMenu 
+  .sideMenuHeader
+      img.sideMenuBurger(src=require("images/Burger.svg"))
+      .title Меню
+  ul.sideMenuMain 
+    each val in ['Пицца', 'Горячие блюда', 'Сезонные блюда', 'Вторые блюда', 'Соусы', 'Десерты', 'Роллы и суши']
+      li.sideMenuItem
+        .activeBlock 
+        .sideMenuValue= val

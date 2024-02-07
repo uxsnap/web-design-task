@@ -50,6 +50,7 @@ module.exports = {
     alias: {
       images: path.join(__dirname, '../src/images/'),
       styles: path.join(__dirname, '../src/styles/'),
+      scripts: path.join(__dirname, '../src/scripts/'),
     },
   },
 }
