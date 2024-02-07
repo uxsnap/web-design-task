@@ -1,0 +1,25 @@
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $gridSize * 2;
+
+  .minus,
+  .plus {
+    width: 40px;
+    height: 40px;
+    background-color: $mainColor;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .value {
+    font-size: 20px;
+  }
+}

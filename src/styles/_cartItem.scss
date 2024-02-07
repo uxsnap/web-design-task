@@ -1,0 +1,33 @@
+.cartItem {
+  border-radius: 12px;
+  background-color: white;
+
+  .cartItemLeft {
+    max-width: 108px;
+
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  .cartItemRight {
+    padding: ($gridSize * 3) ($gridSize * 6) ($gridSize * 3) ($gridSize * 3);
+    position: relative;
+  }
+
+  .cartItemTitle {
+    font-size: 16px;
+    margin-bottom: ($gridSize * 4);
+  }
+
+  .cartItemBottom {
+    display: flex;
+    align-items: flex-end;
+
+    .price {
+      margin-left: 55px;
+      font-size: 16px;
+    }
+  }
+}

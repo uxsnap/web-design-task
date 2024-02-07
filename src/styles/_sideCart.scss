@@ -1,0 +1,39 @@
+.sideCart {
+  position: fixed;
+  width: 400px;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  .sideCartHeader {
+    padding: ($gridSize * 3) ($gridSize * 6);
+
+    height: 92px;
+    background-color: rgba($mainColor, 0.15);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .sideCartLeft {
+    .header {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .deliveryInfo {
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  .sideCartRight {
+    img {
+      cursor: pointer;
+    }
+  }
+
+  .sideCartBody {
+    padding: ($gridSize * 6) ($gridSize * 3);
+
+    background-color: rgba($mainColor, 0.1);
+  }
+}
