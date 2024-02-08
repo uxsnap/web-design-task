@@ -1,0 +1,21 @@
+.paymentInfo {
+  display: flex;
+  flex-direction: column;
+  gap: $gridSize * 3;
+  width: 100%;
+
+  .withoutDelivery,
+  .deliveryPrice,
+  .finalSum {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .finalSum {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}

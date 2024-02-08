@@ -1,10 +1,10 @@
 .sideCart
   .sideCartHeader
     .sideCartLeft 
-      .header Ваш заказ
+      .yourOrder Ваш заказ
       .deliveryInfo Доставим за 45 минут
     .sideCartRight
-      img(src=require("images/Delete.svg"))
+      img.trashIcon(src=require("images/Delete.svg"))
   .sideCartBody
     each _ in [1,2,3]
       include ./cartItem.pug
