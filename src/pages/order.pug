@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+  head
+    title User profile
+    meta(charset="UTF-8")
+    link(href=require("styles/order.scss") rel="stylesheet")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  body.order
+    include components/header.pug
+    +header(false, "disableCart")
+
+    .main
+      

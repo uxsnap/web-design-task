@@ -7,7 +7,8 @@ const paths = require('./paths')
 module.exports = {
   entry: {
     index: './src/pages/home.pug', // output dist/index.html
-    user: './src/pages/user.pug', // output dist/userProfile.html
+    user: './src/pages/user.pug', // output dist/user.html
+    user: './src/pages/order.pug', // output dist/order.html
   },
 
   output: {

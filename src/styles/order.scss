@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter.ttf');
+}
+
+@import 'reset';
+@import 'variables';
+@import 'bootstrap/scss/bootstrap';
+
+// components
+@import 'header';
+@import 'userHeader';
+@import 'mainInput';
+@import 'blockHeader';
+@import 'mainButton';
+@import 'pageHeader';
+
+.order {
+}
