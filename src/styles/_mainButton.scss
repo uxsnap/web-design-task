@@ -13,4 +13,13 @@
   &:hover {
     background-color: $tertiaryColor;
   }
+
+  &.delete {
+    background-color: $mainRed;
+    padding: ($gridSize * 3) ($gridSize * 10);
+
+    &:hover {
+      background-color: $darkRed;
+    }
+  }
 }

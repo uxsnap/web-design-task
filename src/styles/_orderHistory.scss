@@ -1,0 +1,18 @@
+.orderHistory {
+  margin-top: $gridSize * 6;
+
+  .orderHistoryBody {
+    display: grid;
+    gap: $gridSize * 6;
+  }
+
+  .orderHistoryFooter {
+    margin-top: $gridSize * 6;
+    display: grid;
+    justify-content: end;
+
+    .mainButton {
+      max-width: 295px;
+    }
+  }
+}

@@ -7,10 +7,11 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
   body.user
     include components/header.pug
-    +header("disableUser")
+    +header(false, "disableUser")
 
     .main
       include components/userHeader.pug
       include components/userData.pug
       include components/userAddresses.pug
+      include components/orderHistory.pug
       script(src=require("scripts/user.js"))

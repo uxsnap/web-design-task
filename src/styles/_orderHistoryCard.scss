@@ -1,0 +1,59 @@
+.orderHistoryCard {
+  padding: ($gridSize * 3) ($gridSize * 3) ($gridSize * 5) ($gridSize * 5);
+  border-radius: 8px;
+  background-color: $orderGrey;
+
+  .orderHistoryCardHeader {
+    display: grid;
+    grid-template-columns: auto 114px 1fr;
+    align-items: center;
+    gap: $gridSize * 6;
+  }
+
+  .orderHistoryCardTitle {
+    .orderHistoryCardOrder {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .orderHistoryCardDate {
+      margin-top: 2px;
+
+      font-size: 14px;
+      opacity: 0.6;
+    }
+  }
+
+  .orderHistoryCardStars {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: $gridSize;
+
+    svg {
+      &.notActive {
+        opacity: .2;
+      }
+    }
+  }
+
+  .orderHistoryCardPrice {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    align-self: start;
+  }
+
+  .orderHistoryCardBody {
+    margin-top: $gridSize * 5;
+
+    display: grid;
+    grid-template-columns: repeat(5, 90px);
+    gap: $gridSize * 3;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+  }
+}

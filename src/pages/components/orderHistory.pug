@@ -1,0 +1,13 @@
+.orderHistory 
+  include ./blockHeader.pug
+  include ./orderHistoryCard.pug
+  include ./mainButton.pug
+  +blockHeader("История заказов")
+
+  .orderHistoryBody 
+    +orderHistoryCard()
+    +orderHistoryCard()
+    +orderHistoryCard()
+
+  .orderHistoryFooter 
+    +mainButton("Удалить аккаунт", "delete")

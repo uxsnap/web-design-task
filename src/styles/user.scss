@@ -10,18 +10,25 @@
 @import 'header';
 @import 'userHeader';
 @import 'mainInput';
-@import 'userBlockHeader';
+@import 'blockHeader';
 @import 'userData';
 @import 'mainCheckbox';
 @import 'mainInputWithCheckbox';
 @import 'userAddresses';
 @import 'addressBlock';
+@import 'orderHistoryCard';
+@import 'orderHistory';
+@import 'mainButton';
+@import 'pageHeader';
 
 .user {
   background-color: $mainBg;
+
   .main {
     padding-left: $gridSize * 6;
     padding-right: $gridSize * 6;
+    padding-bottom: $gridSize * 5;
+
     max-width: 950px;
     margin: 0 auto;
   }
