@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter.ttf');
+}
+
+@import 'reset';
+@import 'variables';
+
+// components
+@import 'header';
+@import 'userHeader';
+@import 'mainInput';
+
+.user {
+  background-color: $mainBg;
+  padding-left: $gridSize * 6;
+  padding-right: $gridSize * 6;
+
+  .header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

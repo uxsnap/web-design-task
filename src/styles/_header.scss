@@ -18,4 +18,11 @@
   .cart {
     cursor: pointer;
   }
+
+  &.disableUser {
+    .userIcon {
+      opacity: .3;
+      pointer-events: none;
+    }
+  }
 }

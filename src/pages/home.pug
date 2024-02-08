@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+  head
+    title Document
+    meta(charset="UTF-8")
+    link(href=require("styles/home.scss") rel="stylesheet")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  body.home
+    include components/header.pug
+    +header()
+    include components/productList.pug
+    include components/sideMenu.pug
+    include components/sideCart.pug
+    script(src=require("scripts/home.js"))

@@ -1,0 +1,12 @@
+doctype html
+html(lang="en")
+  head
+    title User profile
+    meta(charset="UTF-8")
+    link(href=require("styles/user.scss") rel="stylesheet")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  body.user
+    include components/header.pug
+    +header("disableUser")
+    include components/userHeader.pug
+    script(src=require("scripts/user.js"))

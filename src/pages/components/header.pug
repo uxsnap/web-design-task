@@ -1,10 +1,15 @@
-.header 
-  .menu 
-    img(src=require("images/Burger.svg"))
-  a.logo(href="/") 
-    img(src=require("images/Logo.svg"))
-  .icons 
-    .userIcon
-      img(src=require("images/User.svg"))
-    .cart
-      img(src=require("images/Cart.svg"))
+mixin header(cartIsLink= false, className= "") 
+  .header(class= className) 
+    .menu 
+      img(src=require("images/Burger.svg"))
+    a.logo(href="/") 
+      img(src=require("images/Logo.svg"))
+    .icons 
+      a.userIcon(href="user.html")
+        img(src=require("images/User.svg"))
+      if cartIsLink 
+        a.cart(href="/order")
+          img(src=require("images/Cart.svg"))
+      else 
+        .cart
+          img(src=require("images/Cart.svg"))

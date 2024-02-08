@@ -6,7 +6,8 @@ const paths = require('./paths')
 
 module.exports = {
   entry: {
-    index: './src/pages/index.pug', // output dist/index.html
+    index: './src/pages/home.pug', // output dist/index.html
+    user: './src/pages/user.pug', // output dist/userProfile.html
   },
 
   output: {
@@ -51,6 +52,7 @@ module.exports = {
       images: path.join(__dirname, '../src/images/'),
       styles: path.join(__dirname, '../src/styles/'),
       scripts: path.join(__dirname, '../src/scripts/'),
+      components: path.join(__dirname, '../src/pages/components')
     },
   },
 }
