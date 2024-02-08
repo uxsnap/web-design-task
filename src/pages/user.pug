@@ -8,5 +8,9 @@ html(lang="en")
   body.user
     include components/header.pug
     +header("disableUser")
-    include components/userHeader.pug
-    script(src=require("scripts/user.js"))
+
+    .main
+      include components/userHeader.pug
+      include components/userData.pug
+      include components/userAddresses.pug
+      script(src=require("scripts/user.js"))

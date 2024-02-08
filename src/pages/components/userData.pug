@@ -1,0 +1,13 @@
+.userData 
+  include ./mainInput.pug
+  include ./mainInputWithCheckbox.pug
+  include ./userBlockHeader.pug
+  +userBlockHeader("Личные данные")
+  .userDataInputs
+    +mainInput("Имя")
+    +mainInput("Фамилия")
+    +mainInput("Отчество")
+  .userDataInputs
+    +mainInput("Дата Рождения")
+    +mainInputWithCheckbox("Телефон", "Получать SMS сообщения о статусе заказа ")
+    +mainInputWithCheckbox("Электронная почта", "Получать Email сообщения о статусе заказа ")

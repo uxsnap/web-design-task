@@ -1,0 +1,6 @@
+mixin mainInputWithCheckbox(inputLabel= "", checkboxLabel= "")
+  include ./mainInput.pug
+  include ./mainCheckbox.pug
+  .mainInputWithCheckbox
+    +mainInput(inputLabel)
+    +mainCheckbox(checkboxLabel)

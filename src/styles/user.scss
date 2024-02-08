@@ -10,14 +10,19 @@
 @import 'header';
 @import 'userHeader';
 @import 'mainInput';
+@import 'userBlockHeader';
+@import 'userData';
+@import 'mainCheckbox';
+@import 'mainInputWithCheckbox';
+@import 'userAddresses';
+@import 'addressBlock';
 
 .user {
   background-color: $mainBg;
-  padding-left: $gridSize * 6;
-  padding-right: $gridSize * 6;
-
-  .header {
-    padding-left: 0;
-    padding-right: 0;
+  .main {
+    padding-left: $gridSize * 6;
+    padding-right: $gridSize * 6;
+    max-width: 950px;
+    margin: 0 auto;
   }
 }

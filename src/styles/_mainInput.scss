@@ -1,0 +1,25 @@
+.mainInput {
+  display: grid;
+  grid-template-rows: 28px 52px;
+  gap: $gridSize;
+
+  .mainInputLabel {
+    font-size: 16px;
+    line-height: 32px;
+    font-family: $inputFontFamily;
+  } 
+
+  input {
+    border-radius: 4px;
+    background-color: #fff;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid $mainColor;
+    outline: 0;
+    padding: 10px 15px;
+
+    &:placeholder {
+      color: $lightGrey;
+    }
+  }
+}

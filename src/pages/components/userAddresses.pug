@@ -1,0 +1,8 @@
+.userAddresses
+  include ./userBlockHeader.pug
+  include ./addressBlock.pug
+  +userBlockHeader("Адреса")
+  .addresses 
+    +addressBlock("г. Санкт-Петебург, Невский Проспект, д. 26, кв. 80")
+    +addressBlock("г. Санкт-Петебург, Невский Проспект, д. 26, кв. 80")
+    +addressBlock("г. Санкт-Петебург, Невский Проспект, д. 26, кв. 80", true)

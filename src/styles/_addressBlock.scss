@@ -1,0 +1,36 @@
+.addressBlock {
+  border-radius: 4px;
+  border: 1px solid $lightGrey;
+
+  padding: ($gridSize * 6) ($gridSize * 5) ($gridSize * 6) ($gridSize * 3);
+
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  align-items: center;
+
+  .addressBlockLabel {
+    font-size: 24px;
+  }
+
+  .addressSelected {
+    margin-top: $gridSize * 2;
+
+    display: grid;
+    grid-template-columns: 12px 1fr;
+    gap: $gridSize * 2;
+    align-items: center;
+  }
+
+  .addressSelectedIcon {
+    width: 12px;
+    height: 12px;
+  }
+
+  .addressSelectedText {
+    color: $green;
+  }
+
+  .addressBlockRight {
+    cursor: pointer;
+  }
+}

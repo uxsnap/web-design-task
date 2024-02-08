@@ -1,0 +1,10 @@
+mixin addressBlock(label="", selected= false) 
+  .addressBlock
+    .addressBlockLeft
+      .addressBlockLabel= label
+      if selected
+        .addressSelected
+          img.addressSelectedIcon(src=require('images/Selected.svg'))
+          .addressSelectedText Выбранный адрес
+    .addressBlockRight
+      img(src=require('images/Edit.svg'))
