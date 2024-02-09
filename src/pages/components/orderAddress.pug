@@ -1,0 +1,15 @@
+.orderAddress.mt-4
+  include ./blockHeader.pug
+  include ./mainInput.pug
+  include ./mainCheckbox.pug
+
+  +blockHeader("Адрес")
+  .orderAddressForm
+    .bg-primary.p-3.mb-2.d-flex.align-items-center.rounded-1.orderAddressBlock(style="--bs-bg-opacity: .5;") улица Александра Матросова
+    .mb-2.gap-4.mb-1.d-flex.align-items-center.justify-content-between
+      +mainInput("Подъезд", "text", true)
+      +mainInput("Этаж", "text", true)
+      +mainInput("Квартира", "text", true)
+      +mainInput("Домофон", "text", true)
+    .mb-2 
+      +mainCheckbox("Получать SMS сообщения о статусе заказа ")

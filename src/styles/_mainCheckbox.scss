@@ -4,7 +4,7 @@
   line-height: 16px;
   display: grid;
   grid-template-columns: 15px 1fr;
-  gap: 6px;
+  gap: $gridSize;
   align-items: center;
 
   .mainCheckboxLabel {
@@ -39,6 +39,7 @@
       border: solid white;
       border-width: 0 3px 3px 0;
       transform: rotate(45deg);
+      box-sizing: initial;
     }
   }
 

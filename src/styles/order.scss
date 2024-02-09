@@ -3,9 +3,9 @@
   src: url('../fonts/Inter.ttf');
 }
 
+
 @import 'reset';
 @import 'variables';
-@import 'bootstrap/scss/bootstrap';
 
 // components
 @import 'header';
@@ -14,6 +14,11 @@
 @import 'blockHeader';
 @import 'mainButton';
 @import 'pageHeader';
+@import 'mainCheckbox';
+
+$primary: $mainColor;
+
+@import 'bootstrap/scss/bootstrap';
 
 $spacer: $gridSize;
 

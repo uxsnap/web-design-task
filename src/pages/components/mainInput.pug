@@ -1,6 +1,7 @@
-mixin mainInput(label="", type= "text")
-  .mainInput 
-    label.mainInputLabel= label
+mixin mainInput(label="", type= "text", hideLabel= false)
+  .mainInput(class= `${type} ${hideLabel ? 'hideLabel' : ''}`) 
+    if !hideLabel 
+      label.mainInputLabel= label
     if type == "textarea"
       textarea(placeholder= label)
     else

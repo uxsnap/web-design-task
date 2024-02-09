@@ -2,6 +2,14 @@
   display: grid;
   grid-template-rows: 28px 52px;
   gap: $gridSize;
+  
+  &.textarea {
+    grid-template-rows: 28px 132px;
+  }
+
+  &.hideLabel {
+    grid-template-rows: 52px;
+  }
 
   .mainInputLabel {
     font-size: 16px;
@@ -27,7 +35,7 @@
   }
 
   textarea {
-    min-height: 132px;
+    
     line-height: 28px;
   }
 }
