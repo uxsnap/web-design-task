@@ -3,7 +3,6 @@
   src: url('../fonts/Inter.ttf');
 }
 
-
 @import 'reset';
 @import 'variables';
 
@@ -17,6 +16,7 @@
 @import 'mainCheckbox';
 @import 'counter';
 @import 'paymentInfo';
+@import 'mainSelect';
 
 $primary: $mainColor;
 

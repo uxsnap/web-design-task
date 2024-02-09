@@ -1,9 +1,11 @@
 .paymentBlock.p-3.rounded-3.bg-primary(style="--bs-bg-opacity: .2;")
   include ./blockHeader.pug
+  include ./mainInput.pug
+  include ./mainSelect.pug
 
   .paymentBlockMain.mb-3
     +blockHeader("Оплата", true)
-    +mainInput("Способ оплаты", "text", true)
+    +mainSelect("Способ оплаты")
     .mt-3
       +mainInput("Сдача с", "text", true)
 
