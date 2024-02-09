@@ -1,2 +1,2 @@
-mixin blockHeader(text= "")
-  .blockHeader= text
+mixin blockHeader(text= "", smallOffset= false)
+  .blockHeader(class= smallOffset ? "smallHeader" : "")= text

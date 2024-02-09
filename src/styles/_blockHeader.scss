@@ -3,4 +3,8 @@
   line-height: 32px;
   margin-bottom: $gridSize * 6;
   font-weight: 700;
+
+  &.smallHeader {
+    margin-bottom: $gridSize * 3;
+  }
 }

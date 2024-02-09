@@ -16,6 +16,7 @@
 @import 'pageHeader';
 @import 'mainCheckbox';
 @import 'counter';
+@import 'paymentInfo';
 
 $primary: $mainColor;
 
@@ -31,7 +32,7 @@ $spacer: $gridSize;
   background-color: $mainBg;
 
   .main {
-    max-width: 950px;
+    max-width: 1278px;
     margin: 0 auto;
   }
 
@@ -40,5 +41,9 @@ $spacer: $gridSize;
       height: auto;
       width: 178px;
     }
+  }
+
+  .paymentBlock {
+    width: 432px;
   }
 }

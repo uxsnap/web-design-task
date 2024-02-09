@@ -2,7 +2,8 @@
   display: grid;
   grid-template-rows: 28px 52px;
   gap: $gridSize;
-  
+  position: relative;
+
   &.textarea {
     grid-template-rows: 28px 132px;
   }
@@ -34,8 +35,20 @@
     }
   }
 
-  textarea {
-    
-    line-height: 28px;
+  .mainButton {
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    font-size: 12px;
+    background-color: $mainColor;
+    font-weight: normal;
+    padding: $gridSize * 2;
+    max-width: 84px;
+    color: black;
+
+    &:hover {
+      color: white;
+      background-color: $tertiaryColor;
+    }
   }
 }

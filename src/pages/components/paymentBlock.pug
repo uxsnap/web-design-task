@@ -1,1 +1,21 @@
-.paymentBlock Block
+.paymentBlock.p-3.rounded-3.bg-primary(style="--bs-bg-opacity: .2;")
+  include ./blockHeader.pug
+
+  .paymentBlockMain.mb-3
+    +blockHeader("Оплата", true)
+    +mainInput("Способ оплаты", "text", true)
+    .mt-3
+      +mainInput("Сдача с", "text", true)
+
+  .paymentBlockDiscount.mb-3
+    +blockHeader("Скидки", true)
+    +mainInput("Промокод", "text", true, "Применить")
+
+  .paymentBlockFooter 
+    include ./paymentInfo.pug
+    include ./mainButton.pug
+
+    .mt-3
+      +mainButton("Заказать", "")
+
+

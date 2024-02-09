@@ -1,4 +1,4 @@
-mixin mainInput(label="", type= "text", hideLabel= false)
+mixin mainInput(label="", type= "text", hideLabel= false, button= "")
   .mainInput(class= `${type} ${hideLabel ? 'hideLabel' : ''}`) 
     if !hideLabel 
       label.mainInputLabel= label
@@ -6,3 +6,6 @@ mixin mainInput(label="", type= "text", hideLabel= false)
       textarea(placeholder= label)
     else
       input(type= type, placeholder= label)
+    if button !== "" 
+      include ./mainButton.pug
+      +mainButton(button)
