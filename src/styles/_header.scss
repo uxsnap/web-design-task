@@ -25,4 +25,11 @@
       pointer-events: none;
     }
   }
+
+  &.disableCart {
+    .cart {
+      opacity: .3;
+      pointer-events: none;
+    }
+  }
 }

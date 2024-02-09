@@ -7,9 +7,10 @@
     font-size: 16px;
     line-height: 32px;
     font-family: $inputFontFamily;
-  } 
+  }
 
-  input {
+  input,
+  textarea {
     border-radius: 4px;
     background-color: #fff;
     width: 100%;
@@ -17,9 +18,16 @@
     border: 1px solid $mainColor;
     outline: 0;
     padding: 10px 15px;
+    resize: none;
+    font-family: $inputFontFamily;
 
     &:placeholder {
       color: $lightGrey;
     }
+  }
+
+  textarea {
+    min-height: 132px;
+    line-height: 28px;
   }
 }

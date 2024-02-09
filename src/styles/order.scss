@@ -15,5 +15,24 @@
 @import 'mainButton';
 @import 'pageHeader';
 
+$spacer: $gridSize;
+
+:root {
+  --bs-border-color: #{$lightGrey};
+}
+
 .order {
+  background-color: $mainBg;
+
+  .main {
+    max-width: 950px;
+    margin: 0 auto;
+  }
+
+  .dish {
+    .dishImage img {
+      height: auto;
+      width: 178px;
+    }
+  }
 }

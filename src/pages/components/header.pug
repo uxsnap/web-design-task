@@ -8,7 +8,7 @@ mixin header(cartIsLink= false, className= "")
       a.userIcon(href="user.html")
         img(src=require("images/User.svg"))
       if cartIsLink 
-        a.cart(href="/order")
+        a.cart(href="/order.html")
           img(src=require("images/Cart.svg"))
       else 
         .cart

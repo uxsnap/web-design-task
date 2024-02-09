@@ -1,4 +1,7 @@
-mixin mainInput(label="")
+mixin mainInput(label="", type= "text")
   .mainInput 
     label.mainInputLabel= label
-    input(type="text", placeholder= label)
+    if type == "textarea"
+      textarea(placeholder= label)
+    else
+      input(type= type, placeholder= label)

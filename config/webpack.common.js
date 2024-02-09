@@ -8,7 +8,7 @@ module.exports = {
   entry: {
     index: './src/pages/home.pug', // output dist/index.html
     user: './src/pages/user.pug', // output dist/user.html
-    user: './src/pages/order.pug', // output dist/order.html
+    order: './src/pages/order.pug', // output dist/order.html
   },
 
   output: {

@@ -1,0 +1,12 @@
+.dishesInOrder 
+  include ./blockHeader.pug
+  include ./dish.pug
+  include ./mainInput.pug
+  +blockHeader("Блюда в заказе")
+
+  .dishes
+    each val in [1,2,3]
+      .dishItem(class= val > 1 ? "mt-2" : "")
+        +dish()
+  .comment.mt-4
+    +mainInput("Комментарий к заказу", "textarea")
