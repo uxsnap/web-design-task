@@ -1,0 +1,9 @@
+.additionals.mt-4
+  include ./blockHeader.pug
+  include ./additionalItem.pug
+
+  +blockHeader("Дополнительно")
+
+  .additionalsList.d-flex.flex-column.gap-2
+    +additionalItem('Приборы', 'images/Cultery.svg')
+    +additionalItem('Имбирь, васаби, соевый соус', 'images/Rice.svg')

@@ -1,0 +1,7 @@
+mixin additionalItem(text= "", src= "")
+
+  .rounded-2.pt-2.pb-2.pe-3.ps-4.bg-primary.d-flex.align-items-center.justify-content-between.additionalItem(style="--bs-bg-opacity: .1;")
+    .d-flex.align-items-center
+      img(src=require(src)) 
+      .fs-5.ms-4= text
+    include ./counter.pug
