@@ -32,6 +32,7 @@ module.exports = {
     new PugPlugin({
       css: {
         filename: 'assets/css/[name].[contenthash:8].css',
+        output: 'assets'
       },
     }),
   ],
