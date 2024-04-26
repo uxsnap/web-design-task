@@ -1,15 +1,15 @@
 mixin header(cartIsLink= false, className= "") 
   .header(class= className) 
     .menu 
-      img(src=require("images/Burger.svg"))
-    a.logo(href="/") 
-      img(src=require("images/Logo.svg"))
+      img(alt="_img", src=require("images/Burger.svg"))
+    a.logo(href="index.html") 
+      img(alt="_img", src=require("images/Logo.svg"))
     .icons 
       a.userIcon(href="user.html")
-        img(src=require("images/User.svg"))
+        img(alt="_img", src=require("images/User.svg"))
       if cartIsLink 
         a.cart(href="/order.html")
-          img(src=require("images/Cart.svg"))
+          img(alt="_img", src=require("images/Cart.svg"))
       else 
         .cart
-          img(src=require("images/Cart.svg"))
+          img(alt="_img", src=require("images/Cart.svg"))

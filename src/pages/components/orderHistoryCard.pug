@@ -6,8 +6,8 @@ mixin orderHistoryCard()
         .orderHistoryCardDate Доставлен 22.04.23 в 18:00
       .orderHistoryCardStars
         each val in [1,2,3,4,5]
-          img(src=require('images/Star.svg'), class= val > 3 ? "notActive" : "")
+          img(alt="_img", src=require('images/Star.svg'), class= val > 3 ? "notActive" : "")
       .orderHistoryCardPrice 2400 ₽
     .orderHistoryCardBody 
       each val in [1,2,3,4,5]
-        img(src=require('images/rolls2.webp'))
+        img(alt="_img", src=require('images/rolls2.webp'))

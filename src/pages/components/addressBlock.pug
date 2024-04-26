@@ -4,7 +4,7 @@ mixin addressBlock(label="", selected= false)
       .addressBlockLabel= label
       if selected
         .addressSelected
-          img.addressSelectedIcon(src=require('images/Selected.svg'))
+          img.addressSelectedIcon(src=require('images/Selected.svg'), alt="_img")
           .addressSelectedText Выбранный адрес
     .addressBlockRight
-      img(src=require('images/Edit.svg'))
+      img(src=require('images/Edit.svg'), alt="_img")

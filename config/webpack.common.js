@@ -13,7 +13,7 @@ module.exports = {
 
   output: {
     path: paths.build,
-    publicPath: '/',
+    publicPath: '',
   },
 
   plugins: [
@@ -32,7 +32,6 @@ module.exports = {
     new PugPlugin({
       css: {
         filename: 'assets/css/[name].[contenthash:8].css',
-        output: 'assets'
       },
     }),
   ],

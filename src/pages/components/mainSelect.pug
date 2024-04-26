@@ -2,4 +2,4 @@ mixin mainSelect(label="")
   .mainSelect(class= `${type} ${hideLabel ? 'hideLabel' : ''}`) 
     .mainSelectInput
       +mainInput(label, "text", true)
-      img.mainSelectArrow(src=require('images/ArrowDown.svg'))
+      img.mainSelectArrow(src=require('images/ArrowDown.svg'), alt="_img")
