@@ -30,7 +30,7 @@
     resize: none;
     font-family: $inputFontFamily;
 
-    &:placeholder {
+    &::placeholder {
       color: $lightGrey;
     }
   }

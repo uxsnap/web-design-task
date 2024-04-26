@@ -1,7 +1,7 @@
 mixin mainInput(label="", type= "text", hideLabel= false, button= "")
   .mainInput(class= `${type} ${hideLabel ? 'hideLabel' : ''}`) 
     if !hideLabel 
-      label.mainInputLabel= label
+      .mainInputLabel= label
     if type == "textarea"
       textarea(placeholder= label)
     else
