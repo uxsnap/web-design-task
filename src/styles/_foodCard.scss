@@ -33,6 +33,11 @@
       }
 
       .priceBlock {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 12px;
+        
         .price {
           font-weight: 600;
 

@@ -6,6 +6,7 @@ const sideCart = document.querySelector('.sideCart')
 const cartIcon = header.querySelector('.cart')
 const trashIcon = sideCart.querySelector('.trashIcon')
 const makeOrder = sideCart.querySelector('.mainButton')
+const plusButtons = document.querySelectorAll('.plusButton')
 
 headerBurger.onclick = function () {
   sideMenu.classList.add('active')
@@ -26,3 +27,9 @@ trashIcon.onclick = function () {
 makeOrder.onclick = function () {
   window.location.href = 'order.html'
 }
+
+plusButtons.forEach(plusButton => (
+  plusButton.onclick = function () {
+    sideCart.classList.add('active')
+  }
+));
